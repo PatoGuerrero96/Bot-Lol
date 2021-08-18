@@ -42,7 +42,7 @@ async def soloq(ctx, summoner: str, region: str):
     num = roman_to_int(rank)
     url = f'https://opgg-static.akamaized.net/images/medals/{tier.lower()}_{num}.png?image=q_auto:best&v=1'
 
-    emb = discord.Embed(title='Clasificatoria en solitario', description=f'{tier} {rank}')
+    emb = discord.Embed(title='Clasificatoria SoloQ', description=f'{tier} {rank}')
     emb.set_image(url=url)
     emb.insert_field_at(index=0, name='LP', value=league_points)
     emb.insert_field_at(index=1, name='V', value=wins)
@@ -63,7 +63,7 @@ async def flex (ctx, summoner: str, region: str):
     num = roman_to_int(rank)
     url = f'https://opgg-static.akamaized.net/images/medals/{tier.lower()}_{num}.png?image=q_auto:best&v=1'
 
-    emb = discord.Embed(title='Clasificatoria flexible', description=f'{tier} {rank}')
+    emb = discord.Embed(title='Clasificatoria Flex', description=f'{tier} {rank}')
     emb.set_image(url=url)
     emb.insert_field_at(index=0, name='LP', value=league_points)
     emb.insert_field_at(index=1, name='V', value=wins)
